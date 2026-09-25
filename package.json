@@ -1,0 +1,19 @@
+{
+  "name": "@elucenia/tool-das28",
+  "version": "0.1.0",
+  "description": "DAS28 (VHS e PCR)",
+  "main": "calculator.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elucenia/tool-das28.git"
+  }
+}

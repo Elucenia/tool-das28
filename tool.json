@@ -1,0 +1,229 @@
+{
+  "tool": {
+    "id": "das28",
+    "title": "DAS28 (VHS e PCR)",
+    "short": "Atividade da artrite reumatoide em 28 articulações",
+    "desc": "Calcule o DAS28 com VHS ou com PCR para medir a atividade da artrite reumatoide: remissão, baixa, moderada ou alta atividade, pelos cortes da EULAR.",
+    "lead": "Mede a atividade da artrite reumatoide combinando 28 articulações dolorosas e edemaciadas, um reagente de fase aguda e a avaliação global do paciente.",
+    "spec": [
+      "reumatologia",
+      "clinica-medica"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "tjc",
+        "Articulações dolorosas (de 28)",
+        "num",
+        {
+          "min": 0,
+          "max": 28,
+          "step": 1,
+          "ph": "4"
+        }
+      ],
+      [
+        "sjc",
+        "Articulações edemaciadas (de 28)",
+        "num",
+        {
+          "min": 0,
+          "max": 28,
+          "step": 1,
+          "ph": "4"
+        }
+      ],
+      [
+        "gh",
+        "Avaliação global de saúde pelo paciente (escala visual)",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "mm",
+          "ph": "50"
+        }
+      ],
+      [
+        "vhs",
+        "VHS",
+        "num",
+        {
+          "min": 1,
+          "max": 150,
+          "step": 1,
+          "unit": "mm/h",
+          "ph": "25",
+          "opt": true
+        }
+      ],
+      [
+        "pcr",
+        "PCR",
+        "num",
+        {
+          "min": 0,
+          "max": 300,
+          "step": 0.1,
+          "unit": "mg/L",
+          "ph": "9",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p><strong>DAS28-VHS</strong> = 0,56 × √(dolorosas) + 0,28 × √(edemaciadas) + 0,70 × ln(VHS) + 0,014 × avaliação global.</p><p><strong>DAS28-PCR</strong> = 0,56 × √(dolorosas) + 0,28 × √(edemaciadas) + 0,36 × ln(PCR + 1) + 0,014 × avaliação global + 0,96 (PCR em mg/L).</p>",
+    "table": [
+      [
+        "DAS28",
+        "Atividade"
+      ],
+      [
+        "&lt; 2,6",
+        "Remissão"
+      ],
+      [
+        "2,6 a 3,2",
+        "Baixa"
+      ],
+      [
+        "&gt; 3,2 a 5,1",
+        "Moderada"
+      ],
+      [
+        "&gt; 5,1",
+        "Alta"
+      ]
+    ],
+    "table_note": "Resposta EULAR: melhora &gt; 1,2 com DAS28 final ≤ 3,2 = boa resposta; melhora &gt; 0,6 = resposta moderada.",
+    "tips": [
+      "As 28 articulações: ombros, cotovelos, punhos, metacarpofalângicas, interfalângicas proximais das mãos e joelhos. Pés e tornozelos <strong>não</strong> entram: examine-os à parte.",
+      "A remissão pelo DAS28 permite articulações edemaciadas residuais; para metas de remissão estrita, use os critérios booleanos ACR/EULAR ou o SDAI ≤ 3,3.",
+      "Com os mesmos cortes, o DAS28-PCR dá valores cerca de 0,3 a 0,5 menores que o DAS28-VHS: não troque de versão no seguimento do mesmo paciente.",
+      "VHS alta por anemia, idade, gestação ou gamopatia infla o DAS28-VHS sem refletir atividade da doença."
+    ],
+    "sources": [
+      [
+        "Prevoo MLL et al. Modified disease activity scores that include twenty-eight-joint counts: development and validation in a prospective longitudinal study of patients with rheumatoid arthritis. Arthritis Rheum, 1995.",
+        "https://doi.org/10.1002/art.1780380107"
+      ],
+      [
+        "Wells G et al. Validation of the 28-joint Disease Activity Score (DAS28) and European League Against Rheumatism response criteria based on C-reactive protein against disease progression in patients with rheumatoid arthritis, and comparison with the DAS28 based on erythrocyte sedimentation rate. Ann Rheum Dis, 2009.",
+        "https://doi.org/10.1136/ard.2007.084459"
+      ],
+      [
+        "England BR et al. 2019 Update of the American College of Rheumatology Recommended Rheumatoid Arthritis Disease Activity Measures. Arthritis Care Res, 2019.",
+        "https://doi.org/10.1002/acr.24042"
+      ]
+    ],
+    "cases": [
+      [
+        "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+        {
+          "tjc": 4,
+          "sjc": 4,
+          "gh": 50,
+          "vhs": 25
+        },
+        {
+          "raw": {
+            "esr": 4.633
+          },
+          "main": "4,63",
+          "level": "mid",
+          "verdict": "moderada"
+        }
+      ],
+      [
+        "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+        {
+          "tjc": 0,
+          "sjc": 0,
+          "gh": 10,
+          "vhs": 10
+        },
+        {
+          "raw": {
+            "esr": 1.752
+          },
+          "level": "low",
+          "verdict": "Remissão"
+        }
+      ],
+      [
+        "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+        {
+          "tjc": 16,
+          "sjc": 9,
+          "gh": 80,
+          "vhs": 64
+        },
+        {
+          "raw": {
+            "esr": 7.111
+          },
+          "level": "high",
+          "verdict": "Alta"
+        }
+      ],
+      [
+        "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+        {
+          "tjc": 4,
+          "sjc": 4,
+          "gh": 50,
+          "pcr": 9
+        },
+        {
+          "raw": {
+            "crp": 4.169
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "Sem VHS e sem PCR: erro",
+        {
+          "tjc": 4,
+          "sjc": 4,
+          "gh": 50
+        },
+        {
+          "error": true
+        }
+      ]
+    ],
+    "batch": "clinica",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "clinica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/clinica.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 5,
+      "passed": 5,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/clinica.php",
+    "sha256": "9dc60f9c51e1db27ff495c69b24d4422a87e42b8c9bc63551aac6a9bc704b2e0",
+    "bytes": 101245
+  },
+  "clinicalValidation": "not-performed"
+}

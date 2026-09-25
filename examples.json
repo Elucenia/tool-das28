@@ -1,0 +1,111 @@
+[
+  {
+    "label": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "raw": {
+        "esr": 4.633
+      },
+      "main": "4,63",
+      "level": "mid",
+      "verdict": "moderada"
+    },
+    "originalInput": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+    "input": {
+      "tjc": 0,
+      "sjc": 0,
+      "gh": 10,
+      "vhs": 10
+    },
+    "expected": {
+      "raw": {
+        "esr": 1.752
+      },
+      "level": "low",
+      "verdict": "Remissão"
+    },
+    "originalInput": {
+      "tjc": 0,
+      "sjc": 0,
+      "gh": 10,
+      "vhs": 10
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+    "input": {
+      "tjc": 16,
+      "sjc": 9,
+      "gh": 80,
+      "vhs": 64
+    },
+    "expected": {
+      "raw": {
+        "esr": 7.111
+      },
+      "level": "high",
+      "verdict": "Alta"
+    },
+    "originalInput": {
+      "tjc": 16,
+      "sjc": 9,
+      "gh": 80,
+      "vhs": 64
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "pcr": 9
+    },
+    "expected": {
+      "raw": {
+        "crp": 4.169
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "pcr": 9
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Sem VHS e sem PCR: erro",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50
+    },
+    "expected": {
+      "error": true
+    },
+    "originalInput": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50
+    },
+    "expandedZeroOptions": []
+  }
+]
