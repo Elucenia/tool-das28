@@ -1,11 +1,11 @@
-/* tool-das28 · Elucenia · https://github.com/Elucenia/tool-das28
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-das28 · ELUCENIA · https://github.com/Elucenia/tool-das28
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"das28","title":"DAS28 (VHS e PCR)","fields":[["tjc","Articulações dolorosas (de 28)","num",{"min":0,"max":28,"step":1,"ph":"4"}],["sjc","Articulações edemaciadas (de 28)","num",{"min":0,"max":28,"step":1,"ph":"4"}],["gh","Avaliação global de saúde pelo paciente (escala visual)","num",{"min":0,"max":100,"step":1,"unit":"mm","ph":"50"}],["vhs","VHS","num",{"min":1,"max":150,"step":1,"unit":"mm/h","ph":"25","opt":true}],["pcr","PCR","num",{"min":0,"max":300,"step":0.1,"unit":"mg/L","ph":"9","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};

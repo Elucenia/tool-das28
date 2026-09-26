@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-das28",
   "version": "0.1.0",
-  "description": "DAS28 (VHS e PCR) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "DAS28 (VHS e PCR) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
