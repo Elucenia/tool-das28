@@ -1,6 +1,15 @@
 [
   {
-    "label": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+    "id": "das28",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+    "originalInput": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25
+    },
     "input": {
       "tjc": 4,
       "sjc": 4,
@@ -15,16 +24,37 @@
       "level": "mid",
       "verdict": "moderada"
     },
-    "originalInput": {
-      "tjc": 4,
-      "sjc": 4,
-      "gh": 50,
-      "vhs": 25
+    "recordedResult": {
+      "main": [
+        "4,63",
+        ""
+      ],
+      "label": "DAS28-VHS",
+      "raw": {
+        "esr": 4.63321307740774,
+        "crp": null
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+    "id": "das28",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+    "originalInput": {
+      "tjc": 0,
+      "sjc": 0,
+      "gh": 10,
+      "vhs": 10
+    },
     "input": {
       "tjc": 0,
       "sjc": 0,
@@ -38,16 +68,37 @@
       "level": "low",
       "verdict": "Remissão"
     },
-    "originalInput": {
-      "tjc": 0,
-      "sjc": 0,
-      "gh": 10,
-      "vhs": 10
+    "recordedResult": {
+      "main": [
+        "1,75",
+        ""
+      ],
+      "label": "DAS28-VHS",
+      "raw": {
+        "esr": 1.751809565095832,
+        "crp": null
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+    "id": "das28",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+    "originalInput": {
+      "tjc": 16,
+      "sjc": 9,
+      "gh": 80,
+      "vhs": 64
+    },
     "input": {
       "tjc": 16,
       "sjc": 9,
@@ -61,16 +112,37 @@
       "level": "high",
       "verdict": "Alta"
     },
-    "originalInput": {
-      "tjc": 16,
-      "sjc": 9,
-      "gh": 80,
-      "vhs": 64
+    "recordedResult": {
+      "main": [
+        "7,11",
+        ""
+      ],
+      "label": "DAS28-VHS",
+      "raw": {
+        "esr": 7.11121815835177,
+        "crp": null
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+    "id": "das28",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+    "originalInput": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "pcr": 9
+    },
     "input": {
       "tjc": 4,
       "sjc": 4,
@@ -83,16 +155,36 @@
       },
       "level": "mid"
     },
+    "recordedResult": {
+      "main": [
+        "4,17",
+        ""
+      ],
+      "label": "DAS28-PCR",
+      "raw": {
+        "esr": null,
+        "crp": 4.168930633477856
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "das28",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "Sem VHS e sem PCR: erro",
     "originalInput": {
       "tjc": 4,
       "sjc": 4,
-      "gh": 50,
-      "pcr": 9
+      "gh": 50
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Sem VHS e sem PCR: erro",
     "input": {
       "tjc": 4,
       "sjc": 4,
@@ -101,11 +193,16 @@
     "expected": {
       "error": true
     },
-    "originalInput": {
-      "tjc": 4,
-      "sjc": 4,
-      "gh": 50
+    "recordedResult": {
+      "error": "Informe a VHS ou a PCR."
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

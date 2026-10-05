@@ -1,0 +1,687 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tjc",
+    "input": {
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tjc",
+    "input": {
+      "tjc": "",
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" tjc",
+    "input": {
+      "tjc": "NaN",
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" tjc",
+    "input": {
+      "tjc": "Infinity",
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" tjc",
+    "input": {
+      "tjc": "1e309",
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" tjc",
+    "input": {
+      "tjc": "invalid",
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} tjc",
+    "input": {
+      "tjc": {},
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true tjc",
+    "input": {
+      "tjc": true,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum tjc",
+    "input": {
+      "tjc": -1,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum tjc",
+    "input": {
+      "tjc": 30.8,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field sjc",
+    "input": {
+      "tjc": 4,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "sjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field sjc",
+    "input": {
+      "tjc": 4,
+      "sjc": "",
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "sjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" sjc",
+    "input": {
+      "tjc": 4,
+      "sjc": "NaN",
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" sjc",
+    "input": {
+      "tjc": 4,
+      "sjc": "Infinity",
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" sjc",
+    "input": {
+      "tjc": 4,
+      "sjc": "1e309",
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" sjc",
+    "input": {
+      "tjc": 4,
+      "sjc": "invalid",
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} sjc",
+    "input": {
+      "tjc": 4,
+      "sjc": {},
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true sjc",
+    "input": {
+      "tjc": 4,
+      "sjc": true,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum sjc",
+    "input": {
+      "tjc": 4,
+      "sjc": -1,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "sjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum sjc",
+    "input": {
+      "tjc": 4,
+      "sjc": 30.8,
+      "gh": 50,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "sjc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field gh",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "gh"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field gh",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": "",
+      "vhs": 25
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "gh"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" gh",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": "NaN",
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gh"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" gh",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": "Infinity",
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gh"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" gh",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": "1e309",
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gh"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" gh",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": "invalid",
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gh"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} gh",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": {},
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gh"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true gh",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": true,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gh"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum gh",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": -1,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "gh"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum gh",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 110,
+      "vhs": 25
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "gh"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" vhs",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vhs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" vhs",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vhs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" vhs",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vhs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" vhs",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vhs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} vhs",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vhs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true vhs",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "vhs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum vhs",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 0
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "vhs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum vhs",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 165
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "vhs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" pcr",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25,
+      "pcr": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" pcr",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25,
+      "pcr": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" pcr",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25,
+      "pcr": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" pcr",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25,
+      "pcr": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} pcr",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25,
+      "pcr": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true pcr",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25,
+      "pcr": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum pcr",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25,
+      "pcr": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum pcr",
+    "input": {
+      "tjc": 4,
+      "sjc": 4,
+      "gh": 50,
+      "vhs": 25,
+      "pcr": 330
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

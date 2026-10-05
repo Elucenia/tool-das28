@@ -1,0 +1,423 @@
+{
+  "id": "das28",
+  "at": "2026-10-05T17:29:17.087Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/das28/calculator.js",
+    "bytes": 5359,
+    "sha256": "aff7e9d8589fb90db359fe025c0db020fda22c2c40a7551bb597274b7fae9960"
+  },
+  "cases": [
+    {
+      "name": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+      "input": {
+        "tjc": 4,
+        "sjc": 4,
+        "gh": 50,
+        "vhs": 25
+      },
+      "obtained": {
+        "id": "das28",
+        "main": [
+          "4,63",
+          ""
+        ],
+        "label": "DAS28-VHS",
+        "raw": {
+          "esr": 4.63321307740774,
+          "crp": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "4,63",
+          "obtained": "4,63",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.esr",
+          "expected": 4.633,
+          "obtained": 4.63321307740774,
+          "tolerance": 0.0005000100000000001,
+          "difference": 0.00021307740774023642,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.esr",
+          "expected": 4.63321307740774,
+          "obtained": 4.63321307740774,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.crp",
+          "expected": null,
+          "obtained": null,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "4,63",
+          "obtained": "4,63",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+      "input": {
+        "tjc": 0,
+        "sjc": 0,
+        "gh": 10,
+        "vhs": 10
+      },
+      "obtained": {
+        "id": "das28",
+        "main": [
+          "1,75",
+          ""
+        ],
+        "label": "DAS28-VHS",
+        "raw": {
+          "esr": 1.751809565095832,
+          "crp": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.esr",
+          "expected": 1.752,
+          "obtained": 1.751809565095832,
+          "tolerance": 0.0005000100000000001,
+          "difference": 0.0001904349041679243,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.esr",
+          "expected": 1.751809565095832,
+          "obtained": 1.751809565095832,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.crp",
+          "expected": null,
+          "obtained": null,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "1,75",
+          "obtained": "1,75",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+      "input": {
+        "tjc": 16,
+        "sjc": 9,
+        "gh": 80,
+        "vhs": 64
+      },
+      "obtained": {
+        "id": "das28",
+        "main": [
+          "7,11",
+          ""
+        ],
+        "label": "DAS28-VHS",
+        "raw": {
+          "esr": 7.11121815835177,
+          "crp": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.esr",
+          "expected": 7.111,
+          "obtained": 7.11121815835177,
+          "tolerance": 0.0005000100000000001,
+          "difference": 0.00021815835177019238,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.esr",
+          "expected": 7.11121815835177,
+          "obtained": 7.11121815835177,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.crp",
+          "expected": null,
+          "obtained": null,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "7,11",
+          "obtained": "7,11",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+      "input": {
+        "tjc": 4,
+        "sjc": 4,
+        "gh": 50,
+        "pcr": 9
+      },
+      "obtained": {
+        "id": "das28",
+        "main": [
+          "4,17",
+          ""
+        ],
+        "label": "DAS28-PCR",
+        "raw": {
+          "esr": null,
+          "crp": 4.168930633477856
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.crp",
+          "expected": 4.169,
+          "obtained": 4.168930633477856,
+          "tolerance": 0.0005000100000000001,
+          "difference": 0.00006936652214317718,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.esr",
+          "expected": null,
+          "obtained": null,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.crp",
+          "expected": 4.168930633477856,
+          "obtained": 4.168930633477856,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "4,17",
+          "obtained": "4,17",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Sem VHS e sem PCR: erro",
+      "input": {
+        "tjc": 4,
+        "sjc": 4,
+        "gh": 50
+      },
+      "obtained": {
+        "error": "Informe a VHS ou a PCR.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "checks": [
+        {
+          "at": "recorded-rejection",
+          "expected": "4xx with error and no result",
+          "obtained": {
+            "status": 422,
+            "error": "Informe a VHS ou a PCR.",
+            "result": false
+          },
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 50,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

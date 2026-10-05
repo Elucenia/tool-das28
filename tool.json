@@ -5,11 +5,11 @@
     "short": "Atividade da artrite reumatoide em 28 articulações",
     "desc": "Calcule o DAS28 com VHS ou com PCR para medir a atividade da artrite reumatoide: remissão, baixa, moderada ou alta atividade, pelos cortes da EULAR.",
     "lead": "Mede a atividade da artrite reumatoide combinando 28 articulações dolorosas e edemaciadas, um reagente de fase aguda e a avaliação global do paciente.",
+    "kind": "Calculadora",
     "spec": [
       "reumatologia",
       "clinica-medica"
     ],
-    "tier": 1,
     "fields": [
       [
         "tjc",
@@ -73,35 +73,6 @@
       ]
     ],
     "formula": "<p><strong>DAS28-VHS</strong> = 0,56 × √(dolorosas) + 0,28 × √(edemaciadas) + 0,70 × ln(VHS) + 0,014 × avaliação global.</p><p><strong>DAS28-PCR</strong> = 0,56 × √(dolorosas) + 0,28 × √(edemaciadas) + 0,36 × ln(PCR + 1) + 0,014 × avaliação global + 0,96 (PCR em mg/L).</p>",
-    "table": [
-      [
-        "DAS28",
-        "Atividade"
-      ],
-      [
-        "&lt; 2,6",
-        "Remissão"
-      ],
-      [
-        "2,6 a 3,2",
-        "Baixa"
-      ],
-      [
-        "&gt; 3,2 a 5,1",
-        "Moderada"
-      ],
-      [
-        "&gt; 5,1",
-        "Alta"
-      ]
-    ],
-    "table_note": "Resposta EULAR: melhora &gt; 1,2 com DAS28 final ≤ 3,2 = boa resposta; melhora &gt; 0,6 = resposta moderada.",
-    "tips": [
-      "As 28 articulações: ombros, cotovelos, punhos, metacarpofalângicas, interfalângicas proximais das mãos e joelhos. Pés e tornozelos <strong>não</strong> entram: examine-os à parte.",
-      "A remissão pelo DAS28 permite articulações edemaciadas residuais; para metas de remissão estrita, use os critérios booleanos ACR/EULAR ou o SDAI ≤ 3,3.",
-      "Com os mesmos cortes, o DAS28-PCR dá valores cerca de 0,3 a 0,5 menores que o DAS28-VHS: não troque de versão no seguimento do mesmo paciente.",
-      "VHS alta por anemia, idade, gestação ou gamopatia infla o DAS28-VHS sem refletir atividade da doença."
-    ],
     "sources": [
       [
         "Prevoo MLL et al. Modified disease activity scores that include twenty-eight-joint counts: development and validation in a prospective longitudinal study of patients with rheumatoid arthritis. Arthritis Rheum, 1995.",
@@ -193,9 +164,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -204,17 +172,453 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:26:07.408Z",
+      "total": 116,
+      "passed": 116,
+      "sourceRowCount": 116,
+      "uniqueApiInputCount": 116,
+      "sourceContextCount": 116,
+      "scope": "116 selected four-variable developer ESR/CRP formula witnesses; Decimal160 independent expected values corroborated by separate Decimal120 peer. ESRmm/h,CRPmg/L,100mmVASGH. No activity/remission/EULAR thresholds,3-variable/44-joint variants, measurement or instrument-rights approval.",
+      "originalSourceRowCount": 116,
+      "excludedSourceObservationCount": 0,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "26e131732368da8db000feab8d6f3f205c5e757f44ec0597530e771053a0481f",
+        "total": 116,
+        "bankRowCount": 116,
+        "uniqueApiInputCount": 116,
+        "sourceContextCount": 116,
+        "fullStoredSourceRows": 116,
+        "excludedSourceObservationCount": 0,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/six-primary-independent-expectations-final32-r2.json",
+            "sha256": "40d11daa6028d607c2b98916adb0b4d72e009237f0a476708ee241f2b4e36d03"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+            "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+            "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-primary-independent-source-check-final32-r2.json",
+          "sha256": "1adfa3b80e74c8fe41067e540f5dac40043f148703f12c43b54f98edc186bf29"
+        },
+        "packagingRequirement": "All original source32rows preserved across6artifacts,3753 source-eligible cases plus256 Duke source-ineligible observations. Preserve original expectations and explicit no-approval scope."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 116,
+        "uniqueApiInputs": 116,
+        "duplicateRows": 0
+      },
+      "sources": [
+        {
+          "primaryReview": {
+            "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+            "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+          },
+          "independentPrimaryReview": {
+            "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+            "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+          },
+          "targetedReading": {
+            "id": "das28",
+            "url": "https://www.das-score.nl/en/das-and-das28/how-to-meaure-the-das28/how-to-calculate-the-das28/alternative-validated-formulae",
+            "edition": "Developer four-variable DAS28 and DAS28CRP formulas, not a whole1995/2009 primary-paper review",
+            "personallyRead": [
+              "Official developer formula page reopened directly and read formulas/definitions; captured home relevant CRPmg/L definitions and rights paragraph read"
+            ],
+            "files": [
+              "six-primary-documents-final32/das28-alternative-official.html",
+              "six-primary-documents-final32/das28-official-home.html"
+            ],
+            "access": "Formula page direct own web access succeeded. Original Prevoo/Wells full papers not read.",
+            "supported": "Four-variable coefficients .56sqrtTJC+.28sqrtSJC+.014GH plus .70lnESR or .36ln(CRP+1)+.96; ESRmm/h,CRPmg/L,100mmGH. OwnDecimal120 independent from WesternDecimal160.",
+            "excluded": [
+              "Activity/remission/EULAR thresholds and joint/clinical measurement",
+              "Three-variable/44-joint variants",
+              "Developer rights reserved/ePROVIDE permission request, no authorization inferred"
+            ],
+            "sourceArtifacts": [
+              {
+                "file": "six-primary-documents-final32/das28-alternative-official.html",
+                "bytes": 86150,
+                "sha256": "ad2e22d55a34f63e4dd5cc468e9ab7abdd6d9aa93ac23a05a4359269b5e43531"
+              },
+              {
+                "file": "six-primary-documents-final32/das28-official-home.html",
+                "bytes": 98147,
+                "sha256": "7e84c61166e00513a2f8d3193452afb1a5e4ae38b3279539e6ab8d24befa4f47"
+              }
+            ]
+          },
+          "declaredOriginalMethodVersion": "DAS 28 VHS/Prevoo 1995 e DAS 28 PCR/Wells 2009; 28 articulações; PCR comintercepto 0,96",
+          "sourceEditionsUnchanged": true,
+          "scope": "116 selected four-variable developer ESR/CRP formula witnesses; Decimal160 independent expected values corroborated by separate Decimal120 peer. ESRmm/h,CRPmg/L,100mmVASGH. No activity/remission/EULAR thresholds,3-variable/44-joint variants, measurement or instrument-rights approval."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/six-primary-independent-source-check-final32-r2.json",
+      "evidenceSha256": "1adfa3b80e74c8fe41067e540f5dac40043f148703f12c43b54f98edc186bf29",
+      "independentPeer": {
+        "evidence": {
+          "file": "reports/review-20261003/six-primary-independent-peer-publication-final32.json",
+          "sha256": "cdf78c30cbcf97b22551c7177639b6480fb6ceb271ab76d0eeb1330830b356b1"
+        },
+        "status": "passed-scoped-mathematical",
+        "packagingPeer": "pending",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/das28/calculator.js",
+          "sha256": "aff7e9d8589fb90db359fe025c0db020fda22c2c40a7551bb597274b7fae9960"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/das28/calculator.js",
+          "sha256": "aff7e9d8589fb90db359fe025c0db020fda22c2c40a7551bb597274b7fae9960"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/das28/calculator.js",
+          "sha256": "aff7e9d8589fb90db359fe025c0db020fda22c2c40a7551bb597274b7fae9960"
+        }
+      ],
+      "qualifications": [
+        "116 selected four-variable developer ESR/CRP formula witnesses; Decimal160 independent expected values corroborated by separate Decimal120 peer. ESRmm/h,CRPmg/L,100mmVASGH. No activity/remission/EULAR thresholds,3-variable/44-joint variants, measurement or instrument-rights approval.",
+        "Strict integer/boolean/source-class equality; only DAS28 continuous fields retain the original16EPS×max(1,abs reference) criterion. None of the862 historical fixture expected values or tolerances are amended.",
+        "All original4009 rows are retained across6 complete artifacts:3753 eligible numeric/predicate witnesses and256 expressly unapproved Duke surgical+imaging observations. Only3753 count toward independent source scenarios.",
+        "Original3039 failed source-check assertions and69 strict APACHE mortality parity differences remain in the immutable original report. R2repairs66 diagnosis encodings without changing expected mathematics; R2mortality87differences remain unscoped/unapproved.",
+        "Own primary-table constants and4378 expectations were persisted before any engine/Western expectation imports; own39402Node/VM/Chromium executions passed selected scope. This package stage separately replays Node/VM and binds earlier actual Chromium observations.",
+        "No diagnosis, acquisition rubric, mortality/prognostic outcome, clinical cutoff/age60 resolution, risk/prophylaxis decision, instrument/right/translation authorization, professional language or full-method conformity approval.",
+        "Prospective source28/29/30/31 recipes own other evidence leaves. Compose only declared leaves and additive helper fragments, then recompute sums/identities; do not replace whole old catalogs."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "DAS 28 VHS/Prevoo 1995 e DAS 28 PCR/Wells 2009; 28 articulações; PCR comintercepto 0,96",
+    "implementationVersion": "das28@native-2026-10-03+aff7e9d8589f",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/7818570/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "DAS28-VHS = 0,56 × √(dolorosas) + 0,28 × √(edemaciadas) + 0,70 × ln(VHS) + 0,014 × avaliação global. DAS28-PCR = 0,56 × √(dolorosas) + 0,28 × √(edemaciadas) + 0,36 × ln(PCR + 1) + 0,014 × avaliação global + 0,96 (PCR em mg/L).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "tjc",
+            "label": "Articulações dolorosas (de 28)",
+            "type": "num",
+            "min": 0,
+            "max": 28,
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "sjc",
+            "label": "Articulações edemaciadas (de 28)",
+            "type": "num",
+            "min": 0,
+            "max": 28,
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "gh",
+            "label": "Avaliação global de saúde pelo paciente (escala visual)",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "mm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "vhs",
+            "label": "VHS",
+            "type": "num",
+            "min": 1,
+            "max": 150,
+            "unit": "mm/h",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "pcr",
+            "label": "PCR",
+            "type": "num",
+            "min": 0,
+            "max": 300,
+            "unit": "mg/L",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "c058edb9c648d7b328a7525d208b634d559bfd480d13985cb0df5d45ab5ae9bd"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Prevoo MLL et al. Modified disease activity scores that include twenty-eight-joint counts: development and validation in a prospective longitudinal study of patients with rheumatoid arthritis. Arthritis Rheum, 1995.",
+          "url": "https://doi.org/10.1002/art.1780380107",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Modified disease activity scores that include twenty-eight-joint counts. Development and validation in a prospective longitudinal study of patients with rheumatoid arthritis.",
+            "year": "1995",
+            "firstPublicationDate": "1995-01-01",
+            "doi": "10.1002/art.1780380107",
+            "pmid": "7818570",
+            "journal": "Arthritis and rheumatism",
+            "authors": "Prevoo ML, van 't Hof MA, Kuper HH, van Leeuwen MA, van de Putte LB, van Riel PL."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/7818570/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "0d96a3ad47fbdf631eb3de934d9b33a0cce9e0cd662027269a6fddaa035dd690",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Wells G et al. Validation of the 28-joint Disease Activity Score (DAS28) and European League Against Rheumatism response criteria based on C-reactive protein against disease progression in patients with rheumatoid arthritis, and comparison with the DAS28 based on erythrocyte sedimentation rate. Ann Rheum Dis, 2009.",
+          "url": "https://doi.org/10.1136/ard.2007.084459",
+          "class": "primary-publication-full-text-retrieved",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": true,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Validation of the 28-joint Disease Activity Score (DAS28) and European League Against Rheumatism response criteria based on C-reactive protein against disease progression in patients with rheumatoid arthritis, and comparison with the DAS28 based on erythrocyte sedimentation rate.",
+            "year": "2009",
+            "firstPublicationDate": "2008-05-19",
+            "doi": "10.1136/ard.2007.084459",
+            "pmid": "18490431",
+            "pmcid": "PMC2674547",
+            "journal": "Annals of the rheumatic diseases",
+            "authors": "Wells G, Becker JC, Teng J, Dougados M, Schiff M, Smolen J, Aletaha D, van Riel PL."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2674547/",
+          "abstractAvailable": true,
+          "fullTextSha256": "9988cb8ea96d8f6e15a8e0e93964252682449da6c3fd6118598f7b73ceacabb0",
+          "abstractSha256": "f54fa18879b29b53175250b0b30f972f0315e8897b1dd10a943e633208513b89",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "England BR et al. 2019 Update of the American College of Rheumatology Recommended Rheumatoid Arthritis Disease Activity Measures. Arthritis Care Res, 2019.",
+          "url": "https://doi.org/10.1002/acr.24042",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2019 Update of the American College of Rheumatology Recommended Rheumatoid Arthritis Disease Activity Measures.",
+            "year": "2019",
+            "firstPublicationDate": "2019-11-11",
+            "doi": "10.1002/acr.24042",
+            "pmid": "31709779",
+            "pmcid": "PMC6884664",
+            "journal": "Arthritis care & research",
+            "authors": "England BR, Tiong BK, Bergman MJ, Curtis JR, Kazi S, Mikuls TR, O'Dell JR, Ranganath VK, Limanni A, Suter LG, Michaud K."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6884664/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "c808b190a8d1b4cb72a588d301b0ca29c4bd596202fe2bb1520167982c768c61",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:26:07.408Z",
+        "total": 116,
+        "passed": 116,
+        "sourceRowCount": 116,
+        "uniqueApiInputCount": 116,
+        "sourceContextCount": 116,
+        "scope": "116 selected four-variable developer ESR/CRP formula witnesses; Decimal160 independent expected values corroborated by separate Decimal120 peer. ESRmm/h,CRPmg/L,100mmVASGH. No activity/remission/EULAR thresholds,3-variable/44-joint variants, measurement or instrument-rights approval.",
+        "originalSourceRowCount": 116,
+        "excludedSourceObservationCount": 0,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "26e131732368da8db000feab8d6f3f205c5e757f44ec0597530e771053a0481f",
+          "total": 116,
+          "bankRowCount": 116,
+          "uniqueApiInputCount": 116,
+          "sourceContextCount": 116,
+          "fullStoredSourceRows": 116,
+          "excludedSourceObservationCount": 0,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/six-primary-independent-expectations-final32-r2.json",
+              "sha256": "40d11daa6028d607c2b98916adb0b4d72e009237f0a476708ee241f2b4e36d03"
+            },
+            {
+              "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+              "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+            },
+            {
+              "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+              "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-primary-independent-source-check-final32-r2.json",
+            "sha256": "1adfa3b80e74c8fe41067e540f5dac40043f148703f12c43b54f98edc186bf29"
+          },
+          "packagingRequirement": "All original source32rows preserved across6artifacts,3753 source-eligible cases plus256 Duke source-ineligible observations. Preserve original expectations and explicit no-approval scope."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 116,
+          "uniqueApiInputs": 116,
+          "duplicateRows": 0
+        },
+        "sources": [
+          {
+            "primaryReview": {
+              "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+              "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+            },
+            "independentPrimaryReview": {
+              "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+              "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+            },
+            "targetedReading": {
+              "id": "das28",
+              "url": "https://www.das-score.nl/en/das-and-das28/how-to-meaure-the-das28/how-to-calculate-the-das28/alternative-validated-formulae",
+              "edition": "Developer four-variable DAS28 and DAS28CRP formulas, not a whole1995/2009 primary-paper review",
+              "personallyRead": [
+                "Official developer formula page reopened directly and read formulas/definitions; captured home relevant CRPmg/L definitions and rights paragraph read"
+              ],
+              "files": [
+                "six-primary-documents-final32/das28-alternative-official.html",
+                "six-primary-documents-final32/das28-official-home.html"
+              ],
+              "access": "Formula page direct own web access succeeded. Original Prevoo/Wells full papers not read.",
+              "supported": "Four-variable coefficients .56sqrtTJC+.28sqrtSJC+.014GH plus .70lnESR or .36ln(CRP+1)+.96; ESRmm/h,CRPmg/L,100mmGH. OwnDecimal120 independent from WesternDecimal160.",
+              "excluded": [
+                "Activity/remission/EULAR thresholds and joint/clinical measurement",
+                "Three-variable/44-joint variants",
+                "Developer rights reserved/ePROVIDE permission request, no authorization inferred"
+              ],
+              "sourceArtifacts": [
+                {
+                  "file": "six-primary-documents-final32/das28-alternative-official.html",
+                  "bytes": 86150,
+                  "sha256": "ad2e22d55a34f63e4dd5cc468e9ab7abdd6d9aa93ac23a05a4359269b5e43531"
+                },
+                {
+                  "file": "six-primary-documents-final32/das28-official-home.html",
+                  "bytes": 98147,
+                  "sha256": "7e84c61166e00513a2f8d3193452afb1a5e4ae38b3279539e6ab8d24befa4f47"
+                }
+              ]
+            },
+            "declaredOriginalMethodVersion": "DAS 28 VHS/Prevoo 1995 e DAS 28 PCR/Wells 2009; 28 articulações; PCR comintercepto 0,96",
+            "sourceEditionsUnchanged": true,
+            "scope": "116 selected four-variable developer ESR/CRP formula witnesses; Decimal160 independent expected values corroborated by separate Decimal120 peer. ESRmm/h,CRPmg/L,100mmVASGH. No activity/remission/EULAR thresholds,3-variable/44-joint variants, measurement or instrument-rights approval."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/six-primary-independent-source-check-final32-r2.json",
+        "evidenceSha256": "1adfa3b80e74c8fe41067e540f5dac40043f148703f12c43b54f98edc186bf29",
+        "independentPeer": {
+          "evidence": {
+            "file": "reports/review-20261003/six-primary-independent-peer-publication-final32.json",
+            "sha256": "cdf78c30cbcf97b22551c7177639b6480fb6ceb271ab76d0eeb1330830b356b1"
+          },
+          "status": "passed-scoped-mathematical",
+          "packagingPeer": "pending",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/das28/calculator.js",
+            "sha256": "aff7e9d8589fb90db359fe025c0db020fda22c2c40a7551bb597274b7fae9960"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/das28/calculator.js",
+            "sha256": "aff7e9d8589fb90db359fe025c0db020fda22c2c40a7551bb597274b7fae9960"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/das28/calculator.js",
+            "sha256": "aff7e9d8589fb90db359fe025c0db020fda22c2c40a7551bb597274b7fae9960"
+          }
+        ],
+        "qualifications": [
+          "116 selected four-variable developer ESR/CRP formula witnesses; Decimal160 independent expected values corroborated by separate Decimal120 peer. ESRmm/h,CRPmg/L,100mmVASGH. No activity/remission/EULAR thresholds,3-variable/44-joint variants, measurement or instrument-rights approval.",
+          "Strict integer/boolean/source-class equality; only DAS28 continuous fields retain the original16EPS×max(1,abs reference) criterion. None of the862 historical fixture expected values or tolerances are amended.",
+          "All original4009 rows are retained across6 complete artifacts:3753 eligible numeric/predicate witnesses and256 expressly unapproved Duke surgical+imaging observations. Only3753 count toward independent source scenarios.",
+          "Original3039 failed source-check assertions and69 strict APACHE mortality parity differences remain in the immutable original report. R2repairs66 diagnosis encodings without changing expected mathematics; R2mortality87differences remain unscoped/unapproved.",
+          "Own primary-table constants and4378 expectations were persisted before any engine/Western expectation imports; own39402Node/VM/Chromium executions passed selected scope. This package stage separately replays Node/VM and binds earlier actual Chromium observations.",
+          "No diagnosis, acquisition rubric, mortality/prognostic outcome, clinical cutoff/age60 resolution, risk/prophylaxis decision, instrument/right/translation authorization, professional language or full-method conformity approval.",
+          "Prospective source28/29/30/31 recipes own other evidence leaves. Compose only declared leaves and additive helper fragments, then recompute sums/identities; do not replace whole old catalogs."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "aff7e9d8589fb90db359fe025c0db020fda22c2c40a7551bb597274b7fae9960"
+    },
+    "limits": "O DAS28 de 1995 foi desenvolvido para atividade da artrite reumatoide, utilizando contagem de 28 articulações e comparações com avaliação clínica de reumatologistas. A variante por PCR não é automaticamente equivalente à variante por VHS; fórmula, unidades e cortes precisam corresponder à fonte e à edição utilizadas.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.799Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não traz fórmula, unidades, cortes ou equivalência VHS/PCR. Variante PCR/Wells 2009 tem fonte distinta ainda não lida neste lote."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/das28/calculator.js",
+    "bytes": 5359,
+    "sha256": "aff7e9d8589fb90db359fe025c0db020fda22c2c40a7551bb597274b7fae9960"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "24cde5d4fab44886d26e1ed256662e4b3db3c42041ff03cd46d30f65d294cf75",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "9ee1932dedabb2d054316515dbfebce2b0334ef225acc3599b5cdbef55948363",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "9ee1932dedabb2d054316515dbfebce2b0334ef225acc3599b5cdbef55948363",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
