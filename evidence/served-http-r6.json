@@ -1,0 +1,983 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "das28",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/das28/calculator.js",
+    "sha256": "aff7e9d8589fb90db359fe025c0db020fda22c2c40a7551bb597274b7fae9960",
+    "bytes": 5359
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 5,
+    "replayed": 5,
+    "passed": 5,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "das28",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+      "originalInput": {
+        "tjc": 4,
+        "sjc": 4,
+        "gh": 50,
+        "vhs": 25
+      },
+      "input": {
+        "tjc": 4,
+        "sjc": 4,
+        "gh": 50,
+        "vhs": 25
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "esr": 4.633
+        },
+        "main": "4,63",
+        "level": "mid",
+        "verdict": "moderada"
+      },
+      "recordedResult": {
+        "main": [
+          "4,63",
+          ""
+        ],
+        "label": "DAS28-VHS",
+        "raw": {
+          "esr": 4.63321307740774,
+          "crp": null
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/das28/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "tjc": 4,
+            "sjc": 4,
+            "gh": 50,
+            "vhs": 25
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/das28/calculate",
+          "startedAt": "2026-10-05T17:36:36.184Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "das28",
+              "main": [
+                "4,63",
+                ""
+              ],
+              "label": "DAS28-VHS",
+              "raw": {
+                "esr": 4.63321307740774,
+                "crp": null
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "c8c1ff45e77ec3634d1cae54b282eba949f75d435e287847e5e491e1156e53be",
+          "bytes": 143,
+          "elapsedMs": 3.3115000000034343
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/das28/calculate",
+        "startedAt": "2026-10-05T17:36:36.184Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "das28",
+            "main": [
+              "4,63",
+              ""
+            ],
+            "label": "DAS28-VHS",
+            "raw": {
+              "esr": 4.63321307740774,
+              "crp": null
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "c8c1ff45e77ec3634d1cae54b282eba949f75d435e287847e5e491e1156e53be",
+        "bytes": 143,
+        "elapsedMs": 3.3115000000034343
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "4,63",
+            "obtained": "4,63",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.esr",
+            "expected": 4.633,
+            "obtained": 4.63321307740774,
+            "tolerance": 0.0005000100000000001,
+            "difference": 0.00021307740774023642,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.esr",
+            "expected": 4.63321307740774,
+            "obtained": 4.63321307740774,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.crp",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "4,63",
+            "obtained": "4,63",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "das28",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+      "originalInput": {
+        "tjc": 0,
+        "sjc": 0,
+        "gh": 10,
+        "vhs": 10
+      },
+      "input": {
+        "tjc": 0,
+        "sjc": 0,
+        "gh": 10,
+        "vhs": 10
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "esr": 1.752
+        },
+        "level": "low",
+        "verdict": "Remissão"
+      },
+      "recordedResult": {
+        "main": [
+          "1,75",
+          ""
+        ],
+        "label": "DAS28-VHS",
+        "raw": {
+          "esr": 1.751809565095832,
+          "crp": null
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/das28/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "tjc": 0,
+            "sjc": 0,
+            "gh": 10,
+            "vhs": 10
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/das28/calculate",
+          "startedAt": "2026-10-05T17:36:36.496Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "das28",
+              "main": [
+                "1,75",
+                ""
+              ],
+              "label": "DAS28-VHS",
+              "raw": {
+                "esr": 1.751809565095832,
+                "crp": null
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "ca832693daf71757e100a2438262be61f4b9afea96730c10d50b0c67dc6b6e82",
+          "bytes": 144,
+          "elapsedMs": 2.7823999999964144
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/das28/calculate",
+        "startedAt": "2026-10-05T17:36:36.496Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "das28",
+            "main": [
+              "1,75",
+              ""
+            ],
+            "label": "DAS28-VHS",
+            "raw": {
+              "esr": 1.751809565095832,
+              "crp": null
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "ca832693daf71757e100a2438262be61f4b9afea96730c10d50b0c67dc6b6e82",
+        "bytes": 144,
+        "elapsedMs": 2.7823999999964144
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.esr",
+            "expected": 1.752,
+            "obtained": 1.751809565095832,
+            "tolerance": 0.0005000100000000001,
+            "difference": 0.0001904349041679243,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.esr",
+            "expected": 1.751809565095832,
+            "obtained": 1.751809565095832,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.crp",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1,75",
+            "obtained": "1,75",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "das28",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+      "originalInput": {
+        "tjc": 16,
+        "sjc": 9,
+        "gh": 80,
+        "vhs": 64
+      },
+      "input": {
+        "tjc": 16,
+        "sjc": 9,
+        "gh": 80,
+        "vhs": 64
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "esr": 7.111
+        },
+        "level": "high",
+        "verdict": "Alta"
+      },
+      "recordedResult": {
+        "main": [
+          "7,11",
+          ""
+        ],
+        "label": "DAS28-VHS",
+        "raw": {
+          "esr": 7.11121815835177,
+          "crp": null
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/das28/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "tjc": 16,
+            "sjc": 9,
+            "gh": 80,
+            "vhs": 64
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/das28/calculate",
+          "startedAt": "2026-10-05T17:36:36.810Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "das28",
+              "main": [
+                "7,11",
+                ""
+              ],
+              "label": "DAS28-VHS",
+              "raw": {
+                "esr": 7.11121815835177,
+                "crp": null
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "e50bf0a67770e0ea8c2f68c1fabded45d5efee2b9bc8a5152348225fb2c5651c",
+          "bytes": 143,
+          "elapsedMs": 3.657200000001467
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/das28/calculate",
+        "startedAt": "2026-10-05T17:36:36.810Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "das28",
+            "main": [
+              "7,11",
+              ""
+            ],
+            "label": "DAS28-VHS",
+            "raw": {
+              "esr": 7.11121815835177,
+              "crp": null
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "e50bf0a67770e0ea8c2f68c1fabded45d5efee2b9bc8a5152348225fb2c5651c",
+        "bytes": 143,
+        "elapsedMs": 3.657200000001467
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.esr",
+            "expected": 7.111,
+            "obtained": 7.11121815835177,
+            "tolerance": 0.0005000100000000001,
+            "difference": 0.00021815835177019238,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.esr",
+            "expected": 7.11121815835177,
+            "obtained": 7.11121815835177,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.crp",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7,11",
+            "obtained": "7,11",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "das28",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+      "originalInput": {
+        "tjc": 4,
+        "sjc": 4,
+        "gh": 50,
+        "pcr": 9
+      },
+      "input": {
+        "tjc": 4,
+        "sjc": 4,
+        "gh": 50,
+        "pcr": 9
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "crp": 4.169
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "4,17",
+          ""
+        ],
+        "label": "DAS28-PCR",
+        "raw": {
+          "esr": null,
+          "crp": 4.168930633477856
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/das28/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "tjc": 4,
+            "sjc": 4,
+            "gh": 50,
+            "pcr": 9
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/das28/calculate",
+          "startedAt": "2026-10-05T17:36:37.123Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "das28",
+              "main": [
+                "4,17",
+                ""
+              ],
+              "label": "DAS28-PCR",
+              "raw": {
+                "esr": null,
+                "crp": 4.168930633477856
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "69b225fbf41cefc64a2611e1e01206d648144aafc1c1efa38533548474c2bb4c",
+          "bytes": 144,
+          "elapsedMs": 3.1001000000032946
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/das28/calculate",
+        "startedAt": "2026-10-05T17:36:37.123Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "das28",
+            "main": [
+              "4,17",
+              ""
+            ],
+            "label": "DAS28-PCR",
+            "raw": {
+              "esr": null,
+              "crp": 4.168930633477856
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "69b225fbf41cefc64a2611e1e01206d648144aafc1c1efa38533548474c2bb4c",
+        "bytes": 144,
+        "elapsedMs": 3.1001000000032946
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.crp",
+            "expected": 4.169,
+            "obtained": 4.168930633477856,
+            "tolerance": 0.0005000100000000001,
+            "difference": 0.00006936652214317718,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.esr",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.crp",
+            "expected": 4.168930633477856,
+            "obtained": 4.168930633477856,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "4,17",
+            "obtained": "4,17",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "das28",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "Sem VHS e sem PCR: erro",
+      "originalInput": {
+        "tjc": 4,
+        "sjc": 4,
+        "gh": 50
+      },
+      "input": {
+        "tjc": 4,
+        "sjc": 4,
+        "gh": 50
+      },
+      "amendments": [],
+      "expected": {
+        "error": true
+      },
+      "recordedResult": {
+        "error": "Informe a VHS ou a PCR."
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/das28/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "tjc": 4,
+            "sjc": 4,
+            "gh": 50
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/das28/calculate",
+          "startedAt": "2026-10-05T17:36:37.434Z",
+          "status": 422,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "error": "Informe a VHS ou a PCR.",
+            "code": "FORMULA_DOMAIN"
+          },
+          "responseSha256": "34a7d7a1b78a26c86441494322e0b674c468319ee100dc2a187fa5ea0ea64540",
+          "bytes": 59,
+          "elapsedMs": 3.786100000004808
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/das28/calculate",
+        "startedAt": "2026-10-05T17:36:37.434Z",
+        "status": 422,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "error": "Informe a VHS ou a PCR.",
+          "code": "FORMULA_DOMAIN"
+        },
+        "responseSha256": "34a7d7a1b78a26c86441494322e0b674c468319ee100dc2a187fa5ea0ea64540",
+        "bytes": 59,
+        "elapsedMs": 3.786100000004808
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "recorded-rejection",
+            "expected": "4xx with error and no result",
+            "obtained": {
+              "status": 422,
+              "error": "Informe a VHS ou a PCR.",
+              "result": false
+            },
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
