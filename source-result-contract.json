@@ -1,0 +1,259 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "das28",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "1e5d29e4bf8eb364565c6ed853b45b2d52df8421",
+    "oldEngineSha256": "aff7e9d8589fb90db359fe025c0db020fda22c2c40a7551bb597274b7fae9960",
+    "currentEngineSha256": "a02e382b39a1c6eaf0d234ed461465d58a0fa1439ff0249174b64d6c3e90638a"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+      "input": {
+        "tjc": 4,
+        "sjc": 4,
+        "gh": 50,
+        "vhs": 25
+      },
+      "publicOutput": {
+        "id": "das28",
+        "main": [
+          "4,63",
+          ""
+        ],
+        "label": "DAS28-VHS",
+        "raw": {
+          "esr": 4.63321307740774,
+          "crp": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "esr": 4.633
+        },
+        "main": "4,63",
+        "level": "mid",
+        "verdict": "moderada"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "4,63",
+          ""
+        ],
+        "label": "DAS28-VHS",
+        "level": "mid",
+        "verdict": "Atividade moderada da artrite reumatoide",
+        "rows": [],
+        "note": "",
+        "raw": {
+          "esr": 4.63321307740774,
+          "crp": null
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+      "input": {
+        "tjc": 0,
+        "sjc": 0,
+        "gh": 10,
+        "vhs": 10
+      },
+      "publicOutput": {
+        "id": "das28",
+        "main": [
+          "1,75",
+          ""
+        ],
+        "label": "DAS28-VHS",
+        "raw": {
+          "esr": 1.751809565095832,
+          "crp": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "esr": 1.752
+        },
+        "level": "low",
+        "verdict": "Remissão"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1,75",
+          ""
+        ],
+        "label": "DAS28-VHS",
+        "level": "low",
+        "verdict": "Remissão da artrite reumatoide",
+        "rows": [],
+        "note": "",
+        "raw": {
+          "esr": 1.751809565095832,
+          "crp": null
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+      "input": {
+        "tjc": 16,
+        "sjc": 9,
+        "gh": 80,
+        "vhs": 64
+      },
+      "publicOutput": {
+        "id": "das28",
+        "main": [
+          "7,11",
+          ""
+        ],
+        "label": "DAS28-VHS",
+        "raw": {
+          "esr": 7.11121815835177,
+          "crp": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "esr": 7.111
+        },
+        "level": "high",
+        "verdict": "Alta"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7,11",
+          ""
+        ],
+        "label": "DAS28-VHS",
+        "level": "high",
+        "verdict": "Alta atividade da artrite reumatoide",
+        "rows": [],
+        "note": "",
+        "raw": {
+          "esr": 7.11121815835177,
+          "crp": null
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+      "input": {
+        "tjc": 4,
+        "sjc": 4,
+        "gh": 50,
+        "pcr": 9
+      },
+      "publicOutput": {
+        "id": "das28",
+        "main": [
+          "4,17",
+          ""
+        ],
+        "label": "DAS28-PCR",
+        "raw": {
+          "esr": null,
+          "crp": 4.168930633477856
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "crp": 4.169
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "4,17",
+          ""
+        ],
+        "label": "DAS28-PCR",
+        "level": "mid",
+        "verdict": "Atividade moderada da artrite reumatoide",
+        "rows": [],
+        "note": "O DAS28-PCR costuma dar valores menores que o DAS28-VHS: com os mesmos pontos de corte, pode superestimar a remissão.",
+        "raw": {
+          "esr": null,
+          "crp": 4.168930633477856
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "Sem VHS e sem PCR: erro",
+      "input": {
+        "tjc": 4,
+        "sjc": 4,
+        "gh": 50
+      },
+      "publicOutput": {
+        "error": "Informe a VHS ou a PCR.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "sourceExpected": {
+        "error": true
+      },
+      "state": "existing-rejection"
+    }
+  ]
+}

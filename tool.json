@@ -310,7 +310,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "DAS 28 VHS/Prevoo 1995 e DAS 28 PCR/Wells 2009; 28 articulações; PCR comintercepto 0,96",
-    "implementationVersion": "das28@native-2026-10-03+aff7e9d8589f",
+    "implementationVersion": "das28@native-2026-10-05+a02e382b39a1",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/7818570/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -583,7 +583,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "aff7e9d8589fb90db359fe025c0db020fda22c2c40a7551bb597274b7fae9960"
+      "implementationHash": "a02e382b39a1c6eaf0d234ed461465d58a0fa1439ff0249174b64d6c3e90638a",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "das28@native-2026-10-03+aff7e9d8589f",
+          "previousImplementationHash": "aff7e9d8589fb90db359fe025c0db020fda22c2c40a7551bb597274b7fae9960",
+          "implementationHash": "a02e382b39a1c6eaf0d234ed461465d58a0fa1439ff0249174b64d6c3e90638a",
+          "scientificBodySha256": "4502aa8f4fc2b91de40aea0b49fbfaeb10aba5c5d9cebb4029fdfef3c3af8b90",
+          "metadataContractHash": "c058edb9c648d7b328a7525d208b634d559bfd480d13985cb0df5d45ab5ae9bd",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O DAS28 de 1995 foi desenvolvido para atividade da artrite reumatoide, utilizando contagem de 28 articulações e comparações com avaliação clínica de reumatologistas. A variante por PCR não é automaticamente equivalente à variante por VHS; fórmula, unidades e cortes precisam corresponder à fonte e à edição utilizadas.",
     "sourceLimitEvidence": {
@@ -602,20 +630,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/das28/calculator.js",
-    "bytes": 5359,
-    "sha256": "aff7e9d8589fb90db359fe025c0db020fda22c2c40a7551bb597274b7fae9960"
+    "bytes": 5564,
+    "sha256": "a02e382b39a1c6eaf0d234ed461465d58a0fa1439ff0249174b64d6c3e90638a"
   },
-  "sourceToolSha256": "24cde5d4fab44886d26e1ed256662e4b3db3c42041ff03cd46d30f65d294cf75",
+  "sourceToolSha256": "e698a0f9acf4f92d1c718ef0eb2774675620b293b8c09d9d2aaf5b481b2b22b8",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "9ee1932dedabb2d054316515dbfebce2b0334ef225acc3599b5cdbef55948363",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "9ee1932dedabb2d054316515dbfebce2b0334ef225acc3599b5cdbef55948363",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

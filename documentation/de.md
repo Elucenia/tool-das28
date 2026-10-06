@@ -87,3 +87,29 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Mäßige Aktivität der rheumatoiden Arthritis
+
+
+### 2
+
+Remission der rheumatoiden Arthritis
+
+
+### 3
+
+Hohe Aktivität der rheumatoiden Arthritis
+
+
+### 4
+
+Mäßige Aktivität der rheumatoiden Arthritis
+
+Der DAS28-CRP ergibt in der Regel niedrigere Werte als der DAS28-ESR: Bei denselben Grenzwerten kann die Remission überschätzt werden.
+

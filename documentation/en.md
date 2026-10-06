@@ -87,3 +87,29 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Moderate rheumatoid arthritis activity
+
+
+### 2
+
+Rheumatoid arthritis remission
+
+
+### 3
+
+High rheumatoid arthritis activity
+
+
+### 4
+
+Moderate rheumatoid arthritis activity
+
+The DAS28-CRP usually gives lower values than DAS28-ESR: with the same cutoffs, remission may be overestimated.
+

@@ -87,3 +87,29 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Atividade moderada da artrite reumatoide
+
+
+### 2
+
+Remissão da artrite reumatoide
+
+
+### 3
+
+Alta atividade da artrite reumatoide
+
+
+### 4
+
+Atividade moderada da artrite reumatoide
+
+O DAS28-PCR costuma dar valores menores que o DAS28-VHS: com os mesmos pontos de corte, pode superestimar a remissão.
+

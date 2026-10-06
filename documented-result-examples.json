@@ -1,0 +1,557 @@
+{
+  "id": "das28",
+  "implementationVersion": "das28@native-2026-10-05+a02e382b39a1",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Atividade moderada da artrite reumatoide",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Remissão da artrite reumatoide",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta atividade da artrite reumatoide",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Atividade moderada da artrite reumatoide",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "O DAS28-PCR costuma dar valores menores que o DAS28-VHS: com os mesmos pontos de corte, pode superestimar a remissão.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderate rheumatoid arthritis activity",
+            "locale": "en",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rheumatoid arthritis remission",
+            "locale": "en",
+            "template": "documented-authored-c9e7be3abc5d1590206a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "High rheumatoid arthritis activity",
+            "locale": "en",
+            "template": "documented-authored-4fb0078c70e949a65be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderate rheumatoid arthritis activity",
+            "locale": "en",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "note": {
+            "text": "The DAS28-CRP usually gives lower values than DAS28-ESR: with the same cutoffs, remission may be overestimated.",
+            "locale": "en",
+            "template": "documented-authored-9b4f99fc2e3016c16198"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Actividad moderada de la artritis reumatoide",
+            "locale": "es",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Remisión de la artritis reumatoide",
+            "locale": "es",
+            "template": "documented-authored-c9e7be3abc5d1590206a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta actividad de la artritis reumatoide",
+            "locale": "es",
+            "template": "documented-authored-4fb0078c70e949a65be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Actividad moderada de la artritis reumatoide",
+            "locale": "es",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "note": {
+            "text": "El DAS28-PCR suele dar valores menores que el DAS28-VSG: con los mismos puntos de corte, puede sobreestimarse la remisión.",
+            "locale": "es",
+            "template": "documented-authored-9b4f99fc2e3016c16198"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Activité modérée de la polyarthrite rhumatoïde",
+            "locale": "fr",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rémission de la polyarthrite rhumatoïde",
+            "locale": "fr",
+            "template": "documented-authored-c9e7be3abc5d1590206a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Activité élevée de la polyarthrite rhumatoïde",
+            "locale": "fr",
+            "template": "documented-authored-4fb0078c70e949a65be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Activité modérée de la polyarthrite rhumatoïde",
+            "locale": "fr",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "note": {
+            "text": "Le DAS28-CRP donne habituellement des valeurs plus faibles que le DAS28-ESR : avec les mêmes seuils, la rémission peut être surestimée.",
+            "locale": "fr",
+            "template": "documented-authored-9b4f99fc2e3016c16198"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mäßige Aktivität der rheumatoiden Arthritis",
+            "locale": "de",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Remission der rheumatoiden Arthritis",
+            "locale": "de",
+            "template": "documented-authored-c9e7be3abc5d1590206a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hohe Aktivität der rheumatoiden Arthritis",
+            "locale": "de",
+            "template": "documented-authored-4fb0078c70e949a65be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mäßige Aktivität der rheumatoiden Arthritis",
+            "locale": "de",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "note": {
+            "text": "Der DAS28-CRP ergibt in der Regel niedrigere Werte als der DAS28-ESR: Bei denselben Grenzwerten kann die Remission überschätzt werden.",
+            "locale": "de",
+            "template": "documented-authored-9b4f99fc2e3016c16198"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Attività moderata dell’artrite reumatoide",
+            "locale": "it",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Remissione dell’artrite reumatoide",
+            "locale": "it",
+            "template": "documented-authored-c9e7be3abc5d1590206a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta attività dell’artrite reumatoide",
+            "locale": "it",
+            "template": "documented-authored-4fb0078c70e949a65be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Attività moderata dell’artrite reumatoide",
+            "locale": "it",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "note": {
+            "text": "Il DAS28-CRP di solito dà valori inferiori al DAS28-VES: con gli stessi cut-off, la remissione può essere sovrastimata.",
+            "locale": "it",
+            "template": "documented-authored-9b4f99fc2e3016c16198"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "نشاط متوسط لالتهاب المفاصل الروماتويدي",
+            "locale": "ar",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "هدأة التهاب المفاصل الروماتويدي",
+            "locale": "ar",
+            "template": "documented-authored-c9e7be3abc5d1590206a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "نشاط مرتفع لالتهاب المفاصل الروماتويدي",
+            "locale": "ar",
+            "template": "documented-authored-4fb0078c70e949a65be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "نشاط متوسط لالتهاب المفاصل الروماتويدي",
+            "locale": "ar",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "note": {
+            "text": "عادةً ما يعطي DAS28-CRP قيماً أقل من DAS28-ESR: مع نفس حدود القطع، قد تُبالَغ تقديرًا في الهدأة.",
+            "locale": "ar",
+            "template": "documented-authored-9b4f99fc2e3016c16198"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "类风湿关节炎中度活动度",
+            "locale": "zh",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "类风湿关节炎缓解",
+            "locale": "zh",
+            "template": "documented-authored-c9e7be3abc5d1590206a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "类风湿关节炎高活动度",
+            "locale": "zh",
+            "template": "documented-authored-4fb0078c70e949a65be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "类风湿关节炎中度活动度",
+            "locale": "zh",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "note": {
+            "text": "DAS28-CRP通常比DAS28-ESR给出更低的值：在相同截点下，可能高估缓解。",
+            "locale": "zh",
+            "template": "documented-authored-9b4f99fc2e3016c16198"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "関節リウマチの中等度活動性",
+            "locale": "ja",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "関節リウマチの寛解",
+            "locale": "ja",
+            "template": "documented-authored-c9e7be3abc5d1590206a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "関節リウマチの高活動性",
+            "locale": "ja",
+            "template": "documented-authored-4fb0078c70e949a65be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "関節リウマチの中等度活動性",
+            "locale": "ja",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "note": {
+            "text": "DAS28-CRPは通常DAS28-ESRより低い値を示すため、同じカットオフでは寛解を過大評価する可能性がある。",
+            "locale": "ja",
+            "template": "documented-authored-9b4f99fc2e3016c16198"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "4 dolorosas, 4 edemaciadas, VHS 25, global 50: 4,63 (moderada)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "रुमेटॉइड आर्थराइटिस की मध्यम सक्रियता",
+            "locale": "hi",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sem articulações, VHS 10, global 10: 1,75 (remissão)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "रुमेटॉइड आर्थराइटिस की रेमिशन",
+            "locale": "hi",
+            "template": "documented-authored-c9e7be3abc5d1590206a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "16 dolorosas, 9 edemaciadas, VHS 64, global 80: 7,11 (alta)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "रुमेटॉइड आर्थराइटिस की उच्च सक्रियता",
+            "locale": "hi",
+            "template": "documented-authored-4fb0078c70e949a65be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 dolorosas, 4 edemaciadas, PCR 9 mg/L, global 50: DAS28-PCR 4,17",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "रुमेटॉइड आर्थराइटिस की मध्यम सक्रियता",
+            "locale": "hi",
+            "template": "documented-authored-af6c5984f7639140f26a"
+          },
+          "note": {
+            "text": "DAS28-CRP आमतौर पर DAS28-ESR की तुलना में कम मान देता है: समान कटऑफ के साथ, रेमिशन का अधिक आकलन हो सकता है।",
+            "locale": "hi",
+            "template": "documented-authored-9b4f99fc2e3016c16198"
+          },
+          "level": "mid"
+        }
+      }
+    ]
+  }
+}
